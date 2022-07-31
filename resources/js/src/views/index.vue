@@ -1,7 +1,7 @@
 <template>
     <section class="h-16 bg-slate-100">
         <nav class="container mx-auto">
-            <ul class="p-4 float-right text-center">
+            <ul class="p-4 float-right text-center" :key="ren">
                 <li
                     class="text-center inline-block hover:bg-cyan-700 hover:text-white p-2 mx-2 rounded-md"
                 >
@@ -116,16 +116,16 @@ import axios from "axios";
 export default {
     data() {
         return {
-      
+      ren :0,
             chambers: {},
         };
     },
     methods: {
         logout() {
             axios.post("api/logout").then((r) => {
-                console.log(r.status)
+                // console.log(r.status)
                 $cookies.remove("auth")
-           
+           this.ren = Math.random()
                 this.$router.push('/');
             });
           

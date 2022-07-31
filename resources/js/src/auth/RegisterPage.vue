@@ -156,13 +156,13 @@ export default {
             axios.post("/api/register", this.form).then((r) => {
                 axios.get("api/user").then((res) => {
                     $cookies.set("auth", JSON.stringify(res.data));
-                    if (res.data == 1) {
+                    if (res.data.role_id == 1) {
                         this.$router.push({ name: "AllArticles" });
                     }
-                    if (res.data == 2) {
+                    if (res.data.role_id == 2) {
                         this.$router.push({ name: "AllRecords" });
                     }
-                    if (res.data == 3) {
+                    if (res.data.role_id == 3) {
                         this.$router.push({ name: "Appointments" });
                     }
                 });

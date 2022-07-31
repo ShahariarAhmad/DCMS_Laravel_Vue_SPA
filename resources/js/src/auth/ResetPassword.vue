@@ -59,7 +59,9 @@ export default {
             obj.append('confirmPassword', this.confirmPassword)
             obj.append('token', this.token)
 
-            axios.post('/api/reset-password', obj);
+            axios.post('/api/reset-password', obj).then(()=>{
+                this.$router.push({name:'login'})
+            });
         }
     },
     mounted() {
