@@ -27,6 +27,7 @@ To understand how DCMS work and which action does what and leads to where, pleas
 * Vuex
 * Nuxt Js
 * Sanctum
+* Laravel Dusk
 
 
 
