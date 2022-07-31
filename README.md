@@ -4,36 +4,36 @@ Link: [DCMS_Laravel](https://github.com/ShahariarAhmad/DCMS_Laravel)
 
 
 
-This current repository is basically a small portion of the original DCMS. I just wanted to learn & practice Vue Js without wasting time in creating another brand new projects. 
+This current repository is basically a tiny portion of the original DCMS. I just wanted to learn & practice Vue Js without wasting time creating brand new projects. 
 
 
 
-To understand how DCMS work and which action does what and leads to where, please read Main DCMS Basic Documentation. 
-
+To understand how DCMS works and which action leads to where, please read Main DCMS Basic Documentation.
 
 
 
 
 Few lacking in this app that is intentional.
 
-* No from validation implemented . Because I didn't wanted to waste time doing thing that I already know. 
-* Not 100% responsive. Because I didn't wanted to waste my time making is responsive. Already know how to do it with Tailwind & Bootstrap. 
-* But in dummy project like this one I don't maintain clean coding because it require more time that I don't want to spend in a dummy project. Learning is the only purpose this dummy project serves. But I write clean code in production. 
+* No form validation implemented. Because I didn't want to waste time doing things that I already knew. 
+* Not 100% responsive. Because I didn't want to waste my time making it responsive. Already know how to do it with Tailwind & Bootstrap. 
+* But in a dummy project like this one, I don't maintain clean coding. Learning is the only purpose this dummy project has. **But I write clean code in production**. 
 
 
 
 
 
-How to run this project ?
 
-Step : 1
+How to run this project?
 
-- Make sure you have node, composer installed. 
+Step: 1
+
+- Make sure you have node, and composer installed. 
 - You can use any local server.
 
-Step : 2
+Step: 2
 
-inside project directory run these commands
+Inside the project, folder run these commands
 
 * npm install
 * composer update
@@ -43,8 +43,8 @@ inside project directory run these commands
 
 Note: 
 
-* App URL in .ENV file must must include port number. ( Eg.  http://localhost:8000 ) .... Without this Resource links will be broken. 
-* I refractor this git repo & fix bugs when ever I get some free time. 
+* App URL in .ENV file must include the port number. ( Eg.  http://localhost:8000 ) .... **Without this Resource links will be broken**. 
+* I refractor this git repo & fix bugs whenever I get some free time. 
 
 
 
@@ -52,5 +52,6 @@ Note:
 
 Custom License
 
-* You are only allowed to use it for your own learning purpose in a non commercial & private way.
-* You are not allowed to reupload this project anywhere.
+* You are only allowed to use it for your own learning purpose in a non-commercial & private manner. 
+
+* You are not allowed to reupload this project or a customized version of it anywhere.
