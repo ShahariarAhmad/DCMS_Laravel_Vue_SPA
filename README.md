@@ -8,12 +8,47 @@ This current repository is basically a tiny portion of the original DCMS. I just
 
 
 
-To understand how DCMS works and which action leads to where, please read Main DCMS Basic Documentation.
+To understand how DCMS work and which action does what and leads to where, please read Main DCMS Basic Documentation. 
+
+
+
+****Notable technology used****
+
+* Laravel 9
+* Vite
+* Vue Js 3 
+* Axios
+* Sweet Alert 2
+
+
+
+****Things that I will implement in the near future****
+
+* Vuex
+* Nuxt Js
+* Sanctum
+
+
+
+****Database****
+
+* MySQL
+* Database is normalized up to NF-3 
+
+
+
+****Note about database design :**** 
+
+* Few unused columns and foreign keys can be found because this Database originally belongs to my [DCMS_Laravel](https://github.com/ShahariarAhmad/DCMS_Laravel) projects. 
+* I just modified my original DCMS database design a bit to make it workable for this project. 
+* I left most parts untouched in the migration file to avoid unnecessary hassle. 
+* So the database design flaws you might notice in this project are left there intentionally.
+* Check [DCMS_Laravel](https://github.com/ShahariarAhmad/DCMS_Laravel) design. It's perfect!
 
 
 
 
-Few lacking in this app that is intentional.
+****Few lacking in this app that is intentional.****
 
 * No form validation implemented. Because I didn't want to waste time doing things that I already knew. 
 * Not 100% responsive. Because I didn't want to waste my time making it responsive. Already know how to do it with Tailwind & Bootstrap. 
@@ -24,7 +59,7 @@ Few lacking in this app that is intentional.
 
 
 
-How to run this project?
+****How to run this project?****
 
 Step: 1
 
@@ -50,7 +85,7 @@ Note:
 
 
 
-Custom License
+****Custom License****
 
 * You are only allowed to use it for your own learning purpose in a non-commercial & private manner. 
 
