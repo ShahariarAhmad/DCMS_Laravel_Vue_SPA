@@ -4,7 +4,7 @@ Link: [DCMS_Laravel](https://github.com/ShahariarAhmad/DCMS_Laravel)
 
 
 
-This current repository is basically a tiny portion of the original DCMS. I just wanted to learn & practice Vue Js without wasting time creating brand new projects. 
+**This current repository is basically a tiny portion of the original DCMS. I just wanted to learn & practice Vue Js without wasting time creating brand new projects.** 
 
 
 
