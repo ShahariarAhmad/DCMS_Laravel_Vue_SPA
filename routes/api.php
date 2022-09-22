@@ -13,46 +13,24 @@ use App\Http\Controllers\otherController;
 use App\Http\Controllers\serviceController;
 use App\Http\Controllers\socialController;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-
 use App\Models\User;
-
-// Breeze 
-
-use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\Auth\ConfirmablePasswordController;
-use App\Http\Controllers\Auth\EmailVerificationNotificationController;
-use App\Http\Controllers\Auth\EmailVerificationPromptController;
-use App\Http\Controllers\Auth\NewPasswordController;
-use App\Http\Controllers\Auth\PasswordResetLinkController;
-use App\Http\Controllers\Auth\RegisteredUserController;
-use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\authenticationController;
-use App\Models\Blog;
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Hash;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
-
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
 
 Route::get('/user', function () {
-    // return Auth::check();
+ 
     return auth()->user();
 });
+
+Route::get('/seed', function () {
+    set_time_limit(6000);
+    Artisan::call("migrate:fresh --seed");
+    set_time_limit(60);
+    return back();
+})->name('seed');
 
 
 Route::get('/article/category_list', [articleController::class, 'categoryList']);
