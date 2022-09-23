@@ -18,7 +18,7 @@ class Chamber extends Model
     protected function imgUrl(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => env('APP_URL') . '/images/chambers/' . $value,
+            get: fn ($value) => '/images/chambers/' . $value,
             // set: fn ($value) => 'asdasd'.$value,
         );
     }

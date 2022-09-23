@@ -2,10 +2,11 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 
 <body>
@@ -26,9 +27,10 @@
         <div class="ml-3 text-sm font-normal">Run "php artisan migrate:fresh --seed" </div>
         <div class="ml-3 text-sm font-normal"> It will take around 3 minutes</div>
 
-        <a href="{{route('seed')}}"
-            class="ml-auto -mx-1.5 -my-1.5 inline-flex h-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Run
-            
+        <a href="{{ route('seed') }}"
+            class="ml-auto -mx-1.5 -my-1.5 inline-flex h-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Run
+
         </a>
     </div>
 

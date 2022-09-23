@@ -18,7 +18,7 @@ class Event extends Model
     protected function imgUrl(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => env('APP_URL') . '/images/events/' . $value,
+            get: fn ($value) => '/images/events/' . $value,
             // set: fn ($value) => 'asdasd'.$value,
         );
     }

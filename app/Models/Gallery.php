@@ -29,7 +29,7 @@ class Gallery extends Model
     protected function imageUrl(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => env('APP_URL') . '/images/gallery/' . $value,
+            get: fn ($value) =>'/images/gallery/' . $value,
         
         );
     }

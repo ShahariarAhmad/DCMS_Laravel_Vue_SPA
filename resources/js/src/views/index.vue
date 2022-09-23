@@ -111,7 +111,6 @@
 </template>
 
 <script>
-import axios from "axios";
 
 export default {
     data() {
@@ -123,7 +122,6 @@ export default {
     methods: {
         logout() {
             axios.post("api/logout").then((r) => {
-                // console.log(r.status)
                 $cookies.remove("auth")
            this.ren = Math.random()
                 this.$router.push('/');
@@ -135,16 +133,6 @@ export default {
         axios.get("api/home").then((response) => {
             this.chambers = response.data.chamber;
         });
-
-     
-
-        console.table('..........................');
-
-// this.$route.meta.role.includes($cookies.get('auth').role_id)
-    console.log()
-// const data = 
-        console.log($cookies.get('auth'));
- console.table('..........................');
        
     },
 

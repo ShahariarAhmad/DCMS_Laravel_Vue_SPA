@@ -22,8 +22,8 @@ class About extends Model
     protected function profileImg(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => env('APP_URL') . '/images/about/' . $value,
-            // set: fn ($value) => 'asdasd'.$value,
+            get: fn ($value) => '/images/about/' . $value,
+
         );
     }
 
@@ -31,7 +31,7 @@ class About extends Model
     protected function serviceImg(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => env('APP_URL') . '/images/service/' . $value,
+            get: fn ($value) => '/images/service/' . $value,
         
         );
     }

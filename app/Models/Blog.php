@@ -31,7 +31,7 @@ class Blog extends Model
     protected function imgUrl(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => env('APP_URL') . '/images/articles/' . $value,
+            get: fn ($value) => '/images/articles/' . $value,
             // set: fn ($value) => 'asdasd'.$value,
         );
     }

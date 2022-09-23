@@ -20,7 +20,7 @@ class Banner extends Model
     protected function bgImage(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => env('APP_URL') . '/images/banner/home/' . $value,
+            get: fn ($value) => '/images/banner/home/' . $value,
         
         );
     }

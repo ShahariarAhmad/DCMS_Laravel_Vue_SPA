@@ -27,7 +27,7 @@ Route::get('/user', function () {
 
 Route::get('/seed', function () {
     set_time_limit(6000);
-    Artisan::call("migrate:fresh --seed");
+    Artisan::call("migrate:fresh", ['--force' => true ,'--seed' => true]);
     set_time_limit(60);
     return back();
 })->name('seed');
